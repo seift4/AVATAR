@@ -3,13 +3,14 @@
     color:rgb(215, 198, 174);
     padding: 0;
     margin: 0;
-      font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
   font-style: italic;
 }
 html{scroll-behavior: smooth;}
+
 body{
     
     text-align: center;
@@ -293,6 +294,7 @@ background-color: rgba(215, 198, 174, 0.938);
     bottom: 40px;
 }
 .photo h1{
+    transition: .5s;
     color: rgb(255, 255, 255);
     position: absolute;
     top: 5%;
