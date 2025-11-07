@@ -38,6 +38,8 @@ a{
 
 }
 .div:hover{
+    position: relative;
+    left: 0px;
     
     border-radius: 50px;
 
@@ -46,7 +48,7 @@ a{
     background-attachment: scroll;
     background-size: cover;
     height: 100vh;
-    width: 95%;
+    width: 100%;
 
 }
 nav{
@@ -65,27 +67,32 @@ nav{
     justify-content: space-evenly;
 }
 .av{
-
+    width: 150px;
     transition: .5s;
-    font-size: 34px;
+    font-size: 40px;
     position: relative;
     left: 17px;
     bottom: px;
 }
+.av:hover{
+    width: 170px;
+    border-radius: 15px;
+    background-color: wheat;
+    color: #000000;
+}
 .ul li{
     transition: .5s;
-    font-size: 18px;
+    font-size: 25px;
     display: inline-block;
 }
 .ul li:hover{
-    width: 80px;
-    
+    width: 100px;
     font-size: 18px;
     display: inline-block;
-    text-decoration :underline #01022d double;
-    background-color: rgb(215, 198, 174);
+    border-bottom:solid wheat;
+    background-color:#01022d;
     background-origin: padding-box;
-    color: #01022d;
+    color:antiquewhite;
     border-radius: 10px;
  
 
@@ -101,12 +108,12 @@ header{
 }
 .h{
     position: relative;
-    top:50px;
+    top:100px;
     left: 45px;
     font-size: 105px;
     font-weight: 900;
     animation-name: Avatar;
-    animation-duration: 4s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: ease;
@@ -144,7 +151,7 @@ header{
     word-spacing: 15px;
     letter-spacing: 3px;
     position: relative;
-    top: 80px;
+    top: 140px;
     left: 45px;
     font-size: 35px;
     display: flex;
@@ -170,6 +177,8 @@ header{
 }
 .about:hover{
 
+        position: relative;
+    left: 0px;
     border-radius: 50px;
 
     background-image: linear-gradient(to right ,#01022ddb  30%, #00000012 ) ,   url(3.jpg); 
@@ -177,7 +186,7 @@ header{
     background-attachment: scroll;
     background-size: cover;
     height: 100vh;
-    width: 95%;
+    width: 100%;
 
 }
 .about .h1{
@@ -239,13 +248,13 @@ background-color: rgba(215, 198, 174, 0.938);
 
 
 .photo{
-        transition: .5s;
+     transition: .5s;
     border-radius: 50px;
     margin-top: 20px;
     position: relative;
     left: 36px;
     width: 95%;
-    background-image: linear-gradient(to right ,#01022ddb  30%, #000000ae ) ;
+    background-image: linear-gradient(to right ,#01022ddb  30%,#08081ddb) ;
     background-repeat: no-repeat;
     background-size: cover; 
     height: 100vh;
@@ -255,14 +264,16 @@ background-color: rgba(215, 198, 174, 0.938);
 }
 .photo:hover{
 
+        position: relative;
+    left: 0px;
     border-radius: 50px;
 
-    background-image: linear-gradient(to right ,#01022ddb  30%, #00000012 );
+    background-image: linear-gradient(to right ,#08081ddb  30%,#01022ddb  );
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
     height: 100vh;
-    width: 95%;
+    width: 100%;
 
 }
 .width{
@@ -274,7 +285,12 @@ background-color: rgba(215, 198, 174, 0.938);
     align-items: center;
 }
 .width img{
+    
     border-radius:40px ;
+}
+.width h2{
+    position: relative;
+    bottom: 40px;
 }
 .photo h1{
     color: rgb(255, 255, 255);
@@ -284,14 +300,18 @@ background-color: rgba(215, 198, 174, 0.938);
     font-weight: 900;
     margin: 40px;
 }
+.photo h1:hover{
+    color:wheat;
+    text-shadow: 5px 5px 0 rgb(255, 255, 255);
+}
 
 .photo div{
     height: 400px;
     width: 280px;
 }
 
-.photo div img{
-    height: 350px;
+.photo .width img{
+    height: 390px;
     width: 300px;
 }
 .width .char1 .img1{
@@ -305,7 +325,33 @@ background-color: rgba(215, 198, 174, 0.938);
     cursor: grabbing;
     padding: 5px;
     box-shadow: 10px 10px 0 chocolate;
-    opacity: .6;
+    opacity: .3;
+    z-index: 11;
+
+}
+.char1 h2{
+    color:  chocolate;
+    font-weight: 900;
+    text-shadow: 2px 2px 0 white;
+}
+.span1{
+    display: inline-block;
+    font-size: 30px;
+    position: relative;
+    bottom: 200px;
+    font-weight: 900;
+    color: chocolate;
+    opacity: 0;
+    transition: 1s;
+
+}
+.char1:hover .span1 {
+   opacity: 1;
+   z-index: 1;
+
+}
+.char1:hover .photo{
+    background-image: linear-gradient(to right , black , chocolate ) ;
 
 }
 .width .char2 .img2{
@@ -320,6 +366,27 @@ background-color: rgba(215, 198, 174, 0.938);
     box-shadow: 10px 10px 0 rgb(106, 199, 131);
      opacity: .6;
 
+}
+.span2{
+    display: inline-block;
+    font-size: 30px;
+    position: relative;
+    bottom: 200px;
+    font-weight: 900;
+    color: rgb(106, 199, 131);
+    opacity: 0;
+    transition: 1s;
+
+}
+.char2:hover .span2{
+   opacity: 1;
+   z-index: 1;
+
+}
+.char2 h2{
+    color:  rgb(106, 199, 131);
+    font-weight: 900;
+    text-shadow: 2px 2px 0 white;
 }
  
 
@@ -338,7 +405,32 @@ background-color: rgba(215, 198, 174, 0.938);
   opacity: .6;
 
 }
+.span3{
+    display: inline-block;
+    font-size: 30px;
+    position: relative;
+    bottom: 200px;
+    font-weight: 900;
+    color: rgb(0, 119, 255);
+    opacity: 0;
+    transition: 1s;
+
+}
+.char3:hover .span3{
+   opacity: 1;
+   z-index: 1;
+
+   
+} 
+.char3 h2{
+    color:  rgb(0, 119, 255);
+    font-weight: 900;
+    text-shadow: 2px 2px 0 white;
+}
  
+
+
+
 
 
 .width .char4 .img4{
@@ -354,9 +446,30 @@ background-color: rgba(215, 198, 174, 0.938);
   opacity: .6;
 
 }
+.span4{
+    display: inline-block;
+    font-size: 30px;
+    position: relative;
+    bottom: 200px;
+    font-weight: 900;
+    color:  rgb(255, 255, 255);
+    opacity: 0;
+    transition: 1s;
+
+}
+.char4:hover .span4{
+   opacity: 1;
+   z-index: 1;
+
+}
 
 
-
+.char4 h2{
+    color:  rgb(255, 255, 255);
+    font-weight: 900;
+    text-shadow: 2px 2px 0 rgb(111, 105, 105);
+}
+ 
 
 
 
@@ -364,7 +477,7 @@ background-color: rgba(215, 198, 174, 0.938);
 
 
 .Jake{
-        transition: .5s;
+     transition: .5s;
     border-radius: 50px;
     margin-top: 20px;
     position: relative;
@@ -380,7 +493,8 @@ background-color: rgba(215, 198, 174, 0.938);
     align-items: start;
 }
 .Jake:hover{
-
+    position: relative;
+    left: 0px;
     border-radius: 50px;
 
     background-image: linear-gradient(to right ,#01022ddb  30%, #00000012 ) ,   url(45.jpg); 
@@ -388,7 +502,7 @@ background-color: rgba(215, 198, 174, 0.938);
     background-attachment: scroll;
     background-size: cover;
     height: 100vh;
-    width: 95%;
+    width: 100%;
 
 }
 
@@ -452,6 +566,8 @@ opacity: 1;
     align-items: start;
 }
 .ney:hover{
+        position: relative;
+    left: 0px;
 
     border-radius: 50px;
 
@@ -460,7 +576,7 @@ opacity: 1;
     background-attachment: scroll;
     background-size: cover;
     height: 100vh;
-    width: 95%;
+    width: 100%;
 
 }
 
@@ -525,7 +641,8 @@ opacity: 1;
     align-items: start;
 }
 .tsu:hover{
-
+    position: relative;
+    left: 0px;
     border-radius: 50px;
 
     background-image: linear-gradient(to right ,#01022ddb  30%, #00000012 ) , url(444.jpg); 
@@ -533,7 +650,7 @@ opacity: 1;
     background-attachment: scroll;
     background-size: cover;
     height: 100vh;
-    width: 95%;
+    width: 100%;
 
 }
 
@@ -604,7 +721,8 @@ opacity: 1;
     justify-content: center;
     align-items: start;
 }
-.kiri:hover{
+.kiri:hover{    position: relative;
+    left: 0px;
 
     border-radius: 50px;
 
@@ -613,7 +731,7 @@ opacity: 1;
     background-attachment: scroll;
     background-size: cover;
     height: 100vh;
-    width: 95%;
+    width: 100%;
 
 }
 
@@ -661,6 +779,29 @@ opacity: 1;
     box-shadow: 10px 10px 0 rgb(255, 255, 255);
 }
 
+
+
+
+
+
+
+
+#footer {
+  background-color:#01022d;
+  text-align: center;
+  color:aliceblue;
+  padding: 15px 0;
+  font-size: 16px;
+  border-color:white ;
+}
+.seif:hover{
+    padding: 5px;
+    width: 140px;
+    border-radius: 15px;
+    background-color: wheat;
+    color: #01022d;
+
+}
 
 /* <-------------------------------------------------> */
 @media (max-width:600px){
