@@ -34,9 +34,7 @@ div{
 
 }
 div:hover{
-    position: relative;
-    top: 20px;
-    left: 36px;
+
     background-image: linear-gradient(to right ,#01022ddb  30%, #00000012 ) , url(download.webp) ; 
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -167,4 +165,75 @@ input:hover{
     position: absolute;
     bottom: 90px;
     left: 42px;
+}
+@media (max-width:600px){
+div{
+     background-image: linear-gradient(to right ,#01022ddb  30%, #00000000 ) , url(avatar.png) ; 
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+}
+div:hover{
+
+    background-image: linear-gradient(to right ,#01022ddb  30%, #00000012 ) , url(avatar.png) ; 
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+
+}
+    nav{
+        display: block;
+    }
+    .av{ font-size:35px;
+    }
+    ul li{
+        padding: 20px;
+        transition: .5s;
+    }
+    li:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 30px;
+    font-size: 20px;
+    display: inline-block;
+    padding-right: 35PX;
+    text-decoration :underline #01022d solid;
+    background-color: rgb(255, 255, 255);
+    color: #01022d;
+    border-radius: 50%;
+}
+header{
+    width: 380px;
+}
+header h1{
+    font-size: 45px;
+}
+header input{
+    position: absolute;
+    bottom: 5%;
+    transition: .5s;
+}
+input:hover{
+        cursor: pointer;
+    border-color: white;
+    border-radius: 15px;
+    width: 150px;
+    height: 55px;
+    background-color: rgba(255, 255, 255, 0);
+    color: #ffffff;
+    font-size: 18px;
+    position: absolute;
+    bottom: 5%;
+}
+
 }
