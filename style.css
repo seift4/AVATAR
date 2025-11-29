@@ -27,7 +27,6 @@ a{
     
     border-radius: 50px;
     position: relative;
-
     left: 36px;
     background-image: linear-gradient(to right ,#01022ddb  30%, #000000ae ) , url(download.webp) ; 
     background-repeat: no-repeat;
@@ -177,11 +176,9 @@ header{
     height: 100vh;
 }
 .about:hover{
-
         position: relative;
     left: 0px;
     border-radius: 50px;
-
     background-image: linear-gradient(to right ,#01022ddb  30%, #00000012 ) ,   url(3.jpg); 
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -807,20 +804,20 @@ opacity: 1;
 
 /* <-------------------------------------------------> */
 @media (max-width:600px){
-.div{
-     background-image: linear-gradient(to right ,#01022ddb  30%, #00000000 ) , url(avatar.png) ; 
+    body{
+        width: 100%;
+    }
+   .div{
+    width:95%;
+    height:95vh;
+    position: relative;
+       left: 12px;
+     background-image: linear-gradient(to right ,#01022ddb  30%, #000000ae ) , url(avatar.png) ; 
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
-    position: absolute;
-    left: 0%;
-    top: 0%;
-    margin: 0;
-    width: 100%;
-    height: 100vh;
-}
-.div:hover{
-
+   }
+   .div:hover{
     background-image: linear-gradient(to right ,#01022ddb  30%, #00000012 ) , url(avatar.png) ; 
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -828,52 +825,391 @@ opacity: 1;
     height: 100vh;
     width: 100%;
 
-}
-    nav{
-        display: block;
+
+   }
+ nav .av {
+    font-size: 30px;
+        
     }
-    .av{ font-size:35px;
+    nav .ul{
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        width: 50%;
     }
-    ul li{
-        padding: 20px;
+    .ul a li{
+        font-size: 18px;
+    }
+    header .h{
+        font-size: 50px;
+    }
+    header .p{
+        font-size: 30px;
+        width: 350px;
+    }
+    /* /////////////////////////// */
+    .about{
+        position: relative;
+        left: 12px;
+    }
+    .about .h2{
+                position: relative;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+
+        font-size: 30px;
         transition: .5s;
+    font-weight: 900;
+    box-shadow: 8px 8px 0 #01022d;
+    border-radius: 40px;
+    background-color: rgba(215, 198, 174, 0.647);
+    color: #01022d;
+    margin: 0 450px;
+    position: absolute;
+    top: 10%;
+    font-size: 50px;
+    opacity: 0;
+
     }
-    li:hover{
+    .about .h1{
+    transition: .5s;
+    font-weight: 900;
+    box-shadow: 8px 8px 0 #01022d;
+    border-radius: 40px;
+    background-color: rgba(215, 198, 174, 0.647);
+    color: #01022d;
+    margin: 0 450px;
+    position: absolute;
+    top: 10%;
+    font-size: 20px;
+opacity: 1;
+    width: 130px;
+    position: relative;
+    right: 290px;
+
+}
+.about:hover .h1{
+    width: 130px;
+    position: relative;
+    right: 240px;
+    opacity: 1;
+    margin: 15px 440px;
+background-color: rgba(215, 198, 174, 0.938);
+}
+    .div1{
+        position: relative;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+    .div1 .h2{
+        display: none;
+    }
+
+    .div1 .p1{
+        position: relative;
+    top: 90px;
+    font-weight: 900;
+    font-size: 25px;
+    padding: 20px;
+    opacity: 1;
+    color: antiquewhite;
+    border-radius: 40px;
+    }
+    .about:hover .p1{
+        position: relative;
+        top: 90px;
+    font-weight: 900;
+    font-size: 27px;
+    padding: 20px;
+    opacity: 1;
+    background-color:  rgb(215, 198, 174);
+    color: #01022d;
+    border-radius: 40px;
+}
+/* ///////////////////////////////////////// */
+.photo{
+    transition: 1s;
+    background-image: linear-gradient(to right ,rgba(43, 43, 98, 0.859)30%,#01022ddb  );
+    position: relative;
+    left: 13px;
+    width: 95%;
+    height: 2000px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.photo:hover{
+    
+ position: relative;
+    left: 0px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right ,#08081ddb  30%,rgba(43, 43, 98, 0.859)  );
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 2000px;
+    width: 100%;
+}
+.photo h1{
+    position: absolute;
+    top: 0;
+    font-size: 40px;
+    width: 280px;
+    height: 200px;
+}
+.width{
+    position: absolute;
+    top: 870px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 30px;
+}
+/*/////////////////////////////////////////////////*/
+.Jake{
+    position: relative;
+    left: 13px;
+     transition: .5s;
+    border-radius: 50px;
+    margin-top: 20px;
+    width: 95%;
+    background-image: linear-gradient(to right ,#01022ddb  30%, #000000ae ) , url(as.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.Jake:hover{
+    position: relative;
+    left: 0px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right ,#01022ddb  30%, #00000012 ) ,   url(as.jpg); 
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+
+}
+.Jake h1{
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.Jake p{
     font-size: 20px;
-    display: inline-block;
-    padding-right: 35PX;
-    text-decoration :underline #01022d solid;
-    background-color: rgb(255, 255, 255);
-    color: #01022d;
-    border-radius: 50%;
-}
-header{
-    width: 380px;
-}
-header .h{
-    font-size: 45px;
-}
-header input{
     position: absolute;
-    bottom: 5%;
-    transition: .5s;
+    top: 50px;
+    opacity: 0;
+    width: 80%;
+    padding: 10px;
+    background-color: #01022d;
+    border-radius: 40px;
+    box-shadow: 5px 5px 0 chocolate;
+
 }
-input:hover{
-        cursor: pointer;
-    border-color: white;
-    border-radius: 15px;
-    width: 150px;
-    height: 55px;
-    background-color: rgba(255, 255, 255, 0);
-    color: #ffffff;
-    font-size: 18px;
+.Jake:hover p{
+    font-size: 16px;
+    opacity: 1;
+    width: 85%;
+}
+.Jake img{
     position: absolute;
-    bottom: 5%;
+    bottom: 0;
+    height: 55%;
+}
+.Jake:hover img{
 }
 
+/* ////////////////// */
+.ney{
+    position: relative;
+    left: 13px;
+     transition: .5s;
+    border-radius: 50px;
+    margin-top: 20px;
+    width: 95%;
+    background-image: linear-gradient(to right ,#01022ddb  30%, #000000ae ) , url(8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.ney:hover{
+    position: relative;
+    left: 0px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right ,#01022ddb  30%, #00000012 ) ,   url(8.jpg); 
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+
+}
+.ney h1{
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.ney p{
+    font-size: 20px;
+    position: absolute;
+    top: 50px;
+    opacity: 0;
+    width: 80%;
+    padding: 10px;
+    background-color: #01022d;
+    border-radius: 40px;
+    box-shadow: 5px 5px 0 chocolate;
+
+}
+.ney:hover p{
+    font-size: 16px;
+    opacity: 1;
+    width: 85%;
+}
+.ney img{
+    position: absolute;
+    bottom: 0;
+    height: 55%;
+}
+.ney:hover img{
+}
+
+/* ////////////////// */
+.tsu{
+    position: relative;
+    left: 13px;
+     transition: .5s;
+    border-radius: 50px;
+    margin-top: 20px;
+    width: 95%;
+    background-image: linear-gradient(to right ,#01022ddb  30%, #000000ae ) , url(444.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.tsu:hover{
+    position: relative;
+    left: 0px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right ,#01022ddb  30%, #00000012 ) ,   url(444.jpg); 
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+
+}
+.tsu h1{
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.tsu p{
+    font-size: 20px;
+    position: absolute;
+    top: 50px;
+    opacity: 0;
+    width: 80%;
+    padding: 10px;
+    background-color: #01022d;
+    border-radius: 40px;
+    box-shadow: 5px 5px 0 chocolate;
+
+}
+.tsu:hover p{
+    font-size: 18px;
+    opacity: 1;
+    width: 85%;
+}
+.tsu img{
+    position: absolute;
+    bottom: 0;
+    height: 55%;
+}
+.tsu:hover img{
+
+}
+/* ////////////////// */
+.kiri{
+    position: relative;
+    left: 13px;
+     transition: .5s;
+    border-radius: 50px;
+    margin-top: 20px;
+    width: 95%;
+    background-image: linear-gradient(to right ,#01022ddb  30%, #000000ae ) , url(2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.kiri:hover{
+    position: relative;
+    left: 0px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right ,#01022ddb  30%, #00000012 ) ,   url(2.jpg); 
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+
+}
+.kiri h1{
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.kiri p{
+    font-size: 20px;
+    position: absolute;
+    top: 50px;
+    opacity: 0;
+    width: 80%;
+    padding: 10px;
+    background-color: #01022d;
+    border-radius: 40px;
+    box-shadow: 5px 5px 0 chocolate;
+
+}
+.kiri:hover p{
+    font-size: 18px;
+    opacity: 1;
+    width: 85%;
+}
+.kiri img{
+    position: absolute;
+    bottom: 0;
+    height: 55%;
+}
+.kiri:hover img{
+
+}
 }
